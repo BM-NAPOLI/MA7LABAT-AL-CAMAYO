@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hiba {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(15, 15, 20, 0.85), rgba(0, 0, 0, 0.6)),
+    url("../images/BK.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  color: white;
+  font-size: 28px;
+}
+
+.logo span {
+  color: #ea1538;
+  padding-left: 5px;
+}
+
+nav ul {
+  position: relative;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+nav ul span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+  height: 3px;
+  background: linear-gradient(45deg, #4f1919, #ff333f);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/*! nav ul li a:hover {
+  color: #ea1538;
+  transition: 0.3s;
+} */
+
+nav ul li:nth-child(1):hover ~ span {
+  left: 0px;
+}
+nav ul li:nth-child(2):hover ~ span {
+  left: 110px;
+}
+nav ul li:nth-child(3):hover ~ span {
+  left: 230px;
+}
+nav ul li:nth-child(4):hover ~ span {
+  left: 350px;
+}
+
+button {
+  border: none;
+  background-color: #ea1538;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-right: 1.5%;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #780718;
+}
